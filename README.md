@@ -1,0 +1,2 @@
+# Paradigmas
+Exercícios de Paradigmas

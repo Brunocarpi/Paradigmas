@@ -1,2 +1,2 @@
 # Paradigmas
-Exercícios de Paradigmas
+Exercícios do Laboratório de Paradigmas

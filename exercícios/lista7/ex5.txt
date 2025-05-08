@@ -1,0 +1,24 @@
+✅ 1. Buffer Overflow
+
+Um buffer overflow (estouro de buffer) ocorre quando um programa grava dados além dos limites de um buffer (uma área de memória alocada para armazenar dados temporários). Isso pode sobrescrever regiões adjacentes da memória, corrompendo dados e, em casos mais graves, permitindo que atacantes executem código malicioso. Por exemplo, se um buffer tem espaço para 10 bytes e o programa tenta armazenar 20 bytes, os 10 bytes extras podem invadir áreas não destinadas a eles.
+
+➡️ Impactos: corrupção de dados, falhas no programa, e exploração para ataques como execução remota de código.
+
+✅ 2. Use-After-Free
+
+O erro use-after-free ocorre quando um programa continua a acessar (ler ou escrever) um pedaço de memória após ele já ter sido liberado (free). Após liberar a memória, aquela região pode ser realocada para outra parte do programa ou permanecer não confiável. A continuação do uso pode causar comportamentos indefinidos, incluindo vazamento de informações, falhas e até execução de código malicioso.
+
+➡️ Impactos: corrupção de memória, crashes e falhas de segurança.
+
+✅ 3. Acesso a Ponteiros Nulos ou Inválidos
+
+Esse erro acontece quando o programa tenta acessar memória por meio de um ponteiro que:
+
+Ponteiro nulo: aponta para lugar nenhum (geralmente endereço 0).
+
+Ponteiro inválido: aponta para uma área da memória que não pertence mais ao programa (por exemplo, após liberar a memória).
+
+Esse acesso resulta em falha imediata (como segmentation fault) ou comportamento indefinido.
+
+➡️ Impactos: interrupção abrupta do programa e possíveis brechas de segurança.
+

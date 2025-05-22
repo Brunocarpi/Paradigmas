@@ -5,8 +5,7 @@ Exemplo 1 – Fatorial de 5 object CalculadoraFatorial {
   } 
  
   def main(args: Array[String]): Unit = { 
-    val numero = 5 // Calculando o fatorial de 5 
- 
+    val numero = 5 
     if (numero < 0) { 
       println("Não é possível calcular o fatorial de números negativos.") 
     } else { 

@@ -11,10 +11,8 @@ Option[Int] = {
     val subString = "fofo" 
  
     encontrarSubstring(stringPrincipal, subString) match { 
-      case Some(posicao) => println(s"A substring '$subString' foi encontrada 
-na posição $posicao.") 
-      case None => println(s"A substring '$subString' não foi encontrada na 
-string principal.") 
+      case Some(posicao) => println(s"A substring '$subString' foi encontrada na posição $posicao.") 
+      case None => println(s"A substring '$subString' não foi encontrada na string principal.") 
     } 
   } 
 } 

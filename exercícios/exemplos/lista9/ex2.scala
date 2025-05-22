@@ -1,7 +1,6 @@
 object SomaDeVectores { 
   def somarVectores(vetor1: Array[Int], vetor2: Array[Int]): Array[Int] = { 
-    require(vetor1.length  ==  vetor2.length  &&  vetor1.length  ==  6,  "Os 
-vetores devem ter o mesmo tamanho (6).") 
+    require(vetor1.length  ==  vetor2.length  &&  vetor1.length  ==  6,  "Os vetores devem ter o mesmo tamanho (6).") 
     vetor1.zip(vetor2).map { case (x, y) => x + y } 
   } 
  

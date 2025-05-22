@@ -1,10 +1,8 @@
 object MultiplicacaoMatrizes { 
   def  multiplicarMatrizes(matriz1:  Array[Array[Int]],  matriz2: 
 Array[Array[Int]]): Array[Array[Int]] = { 
-    require(matriz1.length  ==  3  &&  matriz1(0).length  ==  3,  "A  primeira 
-matriz deve ser 3x3.") 
-    require(matriz2.length  ==  3  &&  matriz2(0).length  ==  3,  "A  segunda 
-matriz deve ser 3x3.") 
+    require(matriz1.length  ==  3  &&  matriz1(0).length  ==  3,  "A  primeira matriz deve ser 3x3.") 
+    require(matriz2.length  ==  3  &&  matriz2(0).length  ==  3,  "A  segunda matriz deve ser 3x3.") 
  
     val resultado = Array.ofDim[Int](3, 3) 
  

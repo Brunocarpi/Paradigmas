@@ -1,0 +1,52 @@
+📘 Capítulo 1 – Introdução
+1.1. Benefícios do Uso de GPUs
+Alto Desempenho: GPUs oferecem maior throughput de instruções e largura de banda de memória em comparação com CPUs de preço e consumo similares.
+
+Eficiência Energética: GPUs são mais eficientes energeticamente do que CPUs para tarefas paralelizáveis.
+
+Flexibilidade de Programação: Embora FPGAs sejam eficientes, GPUs oferecem mais flexibilidade de programação.
+
+1.2. CUDA: Plataforma e Modelo de Programação
+CUDA é uma plataforma de computação paralela e modelo de programação da NVIDIA que permite utilizar a GPU para tarefas de propósito geral.
+
+Linguagens Suportadas: CUDA estende linguagens como C, C++ e Fortran para permitir a programação de GPUs.
+
+1.3. Modelo de Programação Escalável
+Escalabilidade: O modelo de programação CUDA é projetado para escalar com o número de núcleos da GPU.
+
+Portabilidade: Códigos escritos em CUDA podem ser executados em diferentes GPUs sem modificações significativas.
+
+🧠 Capítulo 2 – Modelo de Programação
+2.1. Kernels
+Definição: Funções escritas para serem executadas na GPU.
+
+Execução: Um kernel é executado por múltiplas threads em paralelo.
+
+2.2. Hierarquia de Threads
+Threads: Unidades básicas de execução.
+
+Blocos de Threads: Grupos de threads que podem compartilhar memória e sincronizar.
+
+Grades (Grids): Conjuntos de blocos de threads.
+
+2.3. Hierarquia de Memória
+Memória Global: Acessível por todas as threads, mas com maior latência.
+
+Memória Compartilhada: Acessível por threads dentro do mesmo bloco; possui baixa latência.
+
+Memória Local: Privada para cada thread.
+
+2.4. Programação Heterogênea
+Host (CPU): Responsável por iniciar e coordenar a execução.
+
+Device (GPU): Executa os kernels em paralelo.
+
+2.5. Modelo SIMT (Single Instruction, Multiple Threads)
+Execução Paralela: Threads executam a mesma instrução em dados diferentes.
+
+Warp: Grupo de 32 threads que executam instruções em conjunto.
+
+2.6. Capacidade de Cálculo
+Compute Capability: Versão que define as funcionalidades suportadas por uma GPU específica.
+
+Compatibilidade: Códigos podem ser escritos para serem compatíveis com múltiplas versões de compute capability.
